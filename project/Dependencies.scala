@@ -50,6 +50,7 @@ object Dependencies {
   lazy val scalaz_core: ModuleMap = sv => scalazGroup(sv)        % "scalaz-core"        % scalazVersion(sv) cross CVMappingAll
   lazy val slf4j_api              = "org.slf4j"                  % "slf4j-api"          % slf4jVersion
   lazy val squeryl                = "org.squeryl"                % "squeryl"            % "0.9.4"      cross CVMappingAll
+  lazy val netty                  = "org.jboss.netty"            % "netty"              % "3.2.7.Final"
 
   // Aliases
   lazy val mongo_driver = mongo_java_driver
